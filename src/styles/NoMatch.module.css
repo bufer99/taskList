@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: max-content;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.errCode, .errText{
+    font-weight: bold;
+    font-size: 80px;
+}

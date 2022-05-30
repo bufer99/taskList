@@ -1,0 +1,23 @@
+.rotate {
+    animation: rotation 8s infinite linear;
+    height: 200px;
+    width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    flex-direction: column;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}

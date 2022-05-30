@@ -1,0 +1,131 @@
+.summaryWrapper{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(5, minmax(10px,200px));
+    grid-template-rows: repeat(3, minmax(10px,1fr));
+    grid-auto-flow: row;
+    /*
+    grid-template-columns: repeat(5, minmax(10px,1fr));
+    grid-template-rows: repeat(3, minmax(10px,1fr));
+    */
+}
+
+.accordionWrapper{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    align-items: center;
+    height: 80%;
+    overflow-y: scroll;
+    width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.accordionWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.accordion{
+    width: 50%;
+    margin: auto;
+    scroll-margin: 200px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: max-content;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.title{
+    grid-column: 1;
+    grid-row: 1;
+}
+.description{
+    overflow-wrap: break-word;
+    grid-column: 1 / span 5;
+    grid-row: 3;
+}
+.status{
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 40px;
+}
+.published{
+    font-weight: bold;
+    color: green;
+}
+.draft{
+    font-weight: bold;
+    color: orange;
+}
+.statusData{
+    grid-column: 3;
+    grid-row: 1;
+}
+.tasksLength{
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 40px;
+}
+.tasksLengthData{
+    grid-column: 3;
+    grid-row: 2;
+}
+.createdAt{
+    grid-column: 4;
+    grid-row: 1;
+}
+.createdAtData{
+    grid-column: 5;
+    grid-row: 1;
+}
+.updatedAt{
+    grid-column: 4;
+    grid-row: 2;
+}
+.updatedAtData{
+    grid-column: 5;
+    grid-row: 2;
+}
+.editBtn{
+    grid-column: 5;
+    grid-row: 3;
+}
+.text{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.detailsWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+}
+
+.task span, .description, .note{
+    margin-left: 40px;
+
+}
+
+.task{
+    padding: 5px 10px;
+    max-width: 300px;
+    border: 1px black solid;
+    border-radius: 25px;
+    margin: 2px;
+}
+

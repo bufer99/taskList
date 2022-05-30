@@ -1,0 +1,96 @@
+p{
+    margin: 0;
+}
+
+.wrapper{
+    
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 80px 50px 50px 50px;*/
+    
+    /*-webkit-backdrop-filter: blur(300px);
+    bakdrop-filter: blur(300px);*/
+}
+
+.logo img{
+    height: 250px;
+    width: 250px;
+    padding: 50px 50px 50px 0;
+}
+
+.userProfile{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 70px;
+    border-radius: 25px;
+}
+
+.wrapper h2{
+    color: black;
+}
+
+.content{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content div{
+    color: black;
+    font-size: 30px;
+}
+
+.aspects {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+    gap: 20px
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+    gap: 20px
+}
+
+.btn{
+    justify-self: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+a{
+    display: flex;
+    align-items: center;
+}
+
+.btnContent{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn a{
+    padding: 5px 15px;
+    border-radius: 20px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    background: rgb(203,232,209);
+}
+
+.btn img{
+    height: 40px;
+    width: 40px;
+}

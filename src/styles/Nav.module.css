@@ -1,0 +1,56 @@
+.link:not(.home):not(.disabled):hover a{
+    color: grey;
+}
+
+.home a{
+    font-weight: bold;
+}
+
+.activeTab a{
+    color: grey;
+}
+
+.link{
+    height: 100%;
+}
+
+.link a{
+    padding: 15px;
+}
+
+nav ul li{
+    float: left;
+    padding: 0 2vw 0 2vw;
+    align-content: center;
+    display: block;
+}
+nav div a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s linear; /* vendorless fallback */
+    -o-transition: color 0.5s linear; /* opera */
+    -ms-transition: color 0.5s linear; /* IE 10 */
+    -moz-transition: color 0.5s linear; /* Firefox */
+    -webkit-transition: color 0.5s linear; /*safari and chrome */
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    background-color:black;
+}
+
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.disabled a{
+    pointer-events: none;
+    cursor: not-allowed;
+    color: rgba(209, 209, 209, 0.8)
+}
