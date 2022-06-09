@@ -1,12 +1,11 @@
 import styles from '../../styles/EditedTask.module.css'
-import { getEditedTask } from '../../state/taskSlice'
+import { getEditedTask, setTaskListToEdit } from '../../state/taskSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { useState } from 'react'
 import { StatusSelect } from './StatusSelect'
 import classNames from 'classnames/bind'
 import { Task } from './Task'
 import { EditIcon } from './EditIcon'
-import { setTaskListToEdit } from '../../state/taskSlice';
 import { Button } from '@mui/material'
 import { useUpdateListMutation, useCreateListMutation } from '../../state/taskApiSlice';
 import { useNavigate } from 'react-router-dom'
@@ -34,7 +33,7 @@ export const EditedTask = () => {
 
     async function saveTask() {
         console.log(updateListFn)
-
+        /// első mentés után 
         if (taskList?.id) {
             try {
                 const result = await updateListFn({ ...taskList });
@@ -53,6 +52,12 @@ export const EditedTask = () => {
             const result = await createListFn({ ...taskList });
             if (result.data) {
                 console.log(result.data);
+                console.log(taskList)
+                //Ezzel updatelni a store-ban lévő taskListet
+                dispatch(setTaskListToEdit({
+                    ...result.data
+                }))
+
             } else {
                 console.log('error')
             }
