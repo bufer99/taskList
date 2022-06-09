@@ -5,7 +5,7 @@ import { selectCurrentUser } from '../state/authSlice';
 import { useDispatch, useSelector } from "react-redux";
 import { setCredentials } from "../state/authSlice";
 import { useNavigate } from 'react-router-dom';
-import { default as profile } from '../media/user.png'
+import { default as profile } from '../media/user.svg'
 import styles from '../styles/Login.module.css';
 
 export const Login = () => {

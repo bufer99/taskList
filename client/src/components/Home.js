@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css'
-import { default as logo } from '../media/clipboard.png';
+import { default as logo } from '../media/clipboard.svg';
 
 export const Home = () => {
     return (

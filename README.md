@@ -179,33 +179,3 @@ A mentett adatok egy lokális SQLite táblában jelennek meg: `feladatsor_restap
 ## További információk
 
 Elvárás az igényes megjelenés. Ehhez használhatsz saját CSS-t is, de komponens függvénykönyvárakat is, mint pl. [Material UI](https://mui.com/) vagy [Bootstrap](https://react-bootstrap.github.io/).
-
-## Pontozás
-
-Összesen 30 pont érhető el.
-
-[x] React használata (kötelező)
-[x] Redux használata (kötelező)
-[x] Navigáció megfelelően változik a be- és kijelentkezésnek megfelelően (1pt)
-[x] Főoldal megjelenik (1pt)
-[x] Feladatbank: megjelennek a feladatok a megfelelő tartalommal (1pt)
-[x] Feladatbank: 10 feladat jelenik meg, előre-hátra lapozással (2pt)
-[x] Feladatbank: feladatra kattintva megjelenik a feladat leírása (2pt)
-[x] Feladatbank: bejelentkezett felhasználónál ha a feladat nincs kiválasztva, akkor megjelenik a "Kiválaszt" gomb (1pt)
-[x] Feladatbank: bejelentkezett felhasználónál ha a feladat már ki van választva, akkor megjelenik a "Kiválasztva" felirat (1pt)
-[x] Feladatbank: "Kiválaszt" gomb helyes működése (2pt)
-[x] Regisztráció működik (1pt)
-[x] Bejelentkezés működik (1pt)
-[x] Feladatsoraim: csak bejelentkezve érhető el (1pt)
-[x] Feladatsoraim: a felhasználóhoz tartozó feladatsorok megjelennek (1pt)
-[x] Feladatsoraim: feladatsorra kattintva a feladatsor részletei megjelennek (1pt)
-[x] Feladatsoraim: "Szerkeszt" gomb helyes működése (1pt)
-[x] Feladatsoraim: "Új feladatsor" gomb helyes működése (1pt)
-[x] Szerkesztett feladatsor: csak bejelentkezve érhető el és ha van szerkesztésre jelölt feladatsor (1pt)
-[x] Szerkesztett feladatsor: a megjelenített adatok megfelelőek (1pt)
-[x] Szerkesztett feladatsor: a jelölt adatok szerkeszthetők (2pt)
-[x] Szerkesztett feladatsor: "Mentés" gomb helyes működése (2pt)
-[x] Szerkesztett feladatsor: "Szerkesztés lezárása" gomb helyes működése (2pt)
-[x] Profil: csak bejelentkezve érhető el, megfelelő tartalommal (1pt)
-[x] Profil: Kijelentkezés gomb működik (1pt)
-[x] Igényes megjelenés (2pt)

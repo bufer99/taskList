@@ -1,6 +1,6 @@
-import { default as editIcon } from '../../media/edit.png'
-import { default as saveIconOK } from '../../media/saveOK.png'
-import { default as saveIconError } from '../../media/save.png'
+import { default as editIcon } from '../../media/edit.svg'
+import { default as saveIconOK } from '../../media/saveOK.svg'
+import { default as saveIconError } from '../../media/save.svg'
 
 export const EditIcon = ({ height, edit, value }) => {
     const { editValue, setValue } = edit;

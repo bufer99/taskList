@@ -1,6 +1,6 @@
 import { selectCurrentUser, logout, setCredentials, selectCurrentToken } from '../state/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import { default as logo } from '../media/profile.png'
+import { default as logo } from '../media/profile.svg';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import { default as logIcon } from '../media/logout.png'

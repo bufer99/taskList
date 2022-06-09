@@ -2,7 +2,7 @@ import { TextField, Button } from '@mui/material';
 import { useRef, useState } from 'react';
 import { useRegisterMutation } from "../state/authApiSlice";
 import { useNavigate } from 'react-router-dom';
-import { default as profile } from '../media/user.png'
+import { default as profile } from '../media/user.svg'
 import styles from '../styles/Login.module.css';
 
 export const Registration = () => {
