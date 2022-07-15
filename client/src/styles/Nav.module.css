@@ -54,3 +54,9 @@ nav::after {
     cursor: not-allowed;
     color: rgba(209, 209, 209, 0.8)
 }
+
+@media screen and (max-width: 650px){
+    nav > div:not(.home) {
+        display: none;
+    }
+}

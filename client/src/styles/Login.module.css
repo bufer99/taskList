@@ -17,7 +17,7 @@ form{
 .formWrapper{
     max-height: 200px;
     
-    min-width: 250px;
+    min-width: 200px;
     width: 20vw;
     margin: 25vh auto;
 
@@ -37,4 +37,16 @@ form{
 .user img{
     height: 120px;
     width: 120px;
+}
+
+@media screen and (max-width:425px){
+    form{
+        min-width: 150px;
+        padding: 40px 25px 25px 25px;
+    }
+
+    .user img{
+        height: 60px;
+        width: 60px;
+    }
 }
