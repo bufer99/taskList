@@ -4,7 +4,8 @@ import { selectCurrentUser, logout } from '../state/authSlice';
 import { getEditedTask } from "../state/taskSlice";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames/bind";
-
+import { PhoneMenu } from "./PhoneMenu";
+import { useState } from "react";
 let cn = classNames.bind(styles)
 
 export const Layout = () => {
@@ -15,6 +16,19 @@ export const Layout = () => {
 
   const user = useSelector(selectCurrentUser);
   const editedTask = useSelector(getEditedTask);
+
+  const [ sideMenu, setSideMenu ] = useState(false);
+
+  const closeMenu = (e) => {
+    //if(sideMenu) e.preventDefault();
+    console.log(e.target.closest('#phoneMenu'))
+  }
+
+  document.addEventListener('click',closeMenu);
+
+  const openMenu = () => {
+    setSideMenu(!sideMenu);
+  }
 
   return (
     <>
@@ -71,7 +85,12 @@ export const Layout = () => {
             </div>
           </>
         }
-
+        <div className={styles.burgerMenu} onClick={openMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <PhoneMenu id="phoneMenu" open={sideMenu}/>
       </nav>
 
       <Outlet />

@@ -1,13 +1,12 @@
 .grid{
     
-    height: inherit;
+    height: fit-content;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-rows: 50px 1fr;
     margin: 0 20vw;
     min-width: 250px;
-    max-height: 188px;
     min-height: 250px;
     /*padding: 80px 50px 50px 50px;*/
     
@@ -24,7 +23,6 @@
     grid-row: 2;
     justify-self: stretch;
     align-self: stretch;
-    margin-bottom: 200px;
 }
 
 .img{
@@ -41,9 +39,14 @@
     height: 100%;
 }
 
-@media screen and (max-width: 650px){
+p{
+    font-size: var(--fs-400);
+}
+
+@media screen and (max-width: 425px){
+
     .wrapper{
-        height: auto;
+        
     }
 
     .content{
@@ -56,10 +59,10 @@
     }
 
     p{
-        font-size: 0.8em;
+        font-size: var(--fs-400);
     }
 
     .img{
-        width: 50px;
+        width: 70px;
     }
 }

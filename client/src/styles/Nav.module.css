@@ -36,17 +36,12 @@ nav div a{
 }
 
 nav{
+    position: absolute;
+    min-width: 250px;
     display: flex;
     gap: 20px;
     width: 100%;
     background-color:black;
-}
-
-
-nav::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .disabled a{
@@ -55,8 +50,67 @@ nav::after {
     color: rgba(209, 209, 209, 0.8)
 }
 
-@media screen and (max-width: 650px){
-    nav > div:not(.home) {
+.burgerMenu span{
+    background-color: white;
+    height: 5px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.burgerMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 50px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.sideMenu{
+    z-index: 50;
+    width: 100%;
+    position: absolute;
+    transition: top .5s ease-in-out;
+    top: -300%;
+    background-color: black;
+}
+
+.sideMenuContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.sideMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.activeMenu{
+    top: 100%;
+}
+
+@media not screen and (max-width: 650px){
+    .sideMenu{
         display: none;
+    }
+}
+@media screen and (max-width: 650px){
+    nav > .link:not(.home){
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .burgerMenu{
+        display: flex;
+    }
+
+    .sideMenu{
+        
     }
 }

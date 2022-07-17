@@ -16,9 +16,7 @@ form{
 
 .formWrapper{
     max-height: 200px;
-    
     min-width: 200px;
-    width: 20vw;
     margin: 25vh auto;
 
     grid-template-rows: 1fr 1fr 1fr;
