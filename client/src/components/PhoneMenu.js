@@ -8,9 +8,9 @@ let cn = classNames.bind(styles)
 
 export const PhoneMenu = (prop) => {
 
-    const {open, id} = prop;
+    const { open, id, user } = prop;
 
-    console.log(open)
+    console.log("opened", open)
     return (
         <div id={id} className={cn({
             sideMenu: true,
@@ -18,11 +18,13 @@ export const PhoneMenu = (prop) => {
         })}>
             <div className={styles.sideMenuContent}>
                 <Link to="/task-bank">Feladatbank</Link>
-                <Link to="/my-tasks">Feladatsoraim</Link>
-                <Link to="/edited-task">Szerkesztett feladatsor</Link>
-                <Link to="/profile">Profil</Link>
                 <Link to="/login">Bejelentkezés</Link>
                 <Link to="/registration">Regisztráció</Link>
+                {user && <>
+                    <Link to="/my-tasks">Feladatsoraim</Link>
+                    <Link to="/edited-task">Szerkesztett feladatsor</Link>
+                    <Link to="/profile">Profil</Link>
+                </>}
             </div>
         </div>
     )
