@@ -33,9 +33,9 @@ export const Layout = () => {
   }
 
   return (
-    <div style={{display: "flex", flexDirection: "column"}}>
+    <div style={{height: '100%', display: 'flex', flexDirection: 'column'}}>
       <nav className={styles.sticky}>
-        <PhoneMenu user={user} id="phoneMenu" open={sideMenu} />
+        <PhoneMenu user={user} id="phoneMenu" editedTask={editedTask} open={sideMenu} />
         <div className={styles.navContent}>
           <div className={cn({
             link: true,

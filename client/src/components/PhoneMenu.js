@@ -8,7 +8,7 @@ let cn = classNames.bind(styles)
 
 export const PhoneMenu = (prop) => {
 
-    const { open, id, user } = prop;
+    const { open, id, user, editedTask } = prop;
 
     console.log("opened", open)
     return (
@@ -22,7 +22,11 @@ export const PhoneMenu = (prop) => {
                 <Link to="/registration">Regisztráció</Link>
                 {user && <>
                     <Link to="/my-tasks">Feladatsoraim</Link>
-                    <Link to="/edited-task">Szerkesztett feladatsor</Link>
+                    <div className={cn({
+                        disabled: editedTask === null
+                    })}>
+                        <Link to="/edited-task">Szerkesztett feladatsor</Link>
+                    </div>
                     <Link to="/profile">Profil</Link>
                 </>}
             </div>

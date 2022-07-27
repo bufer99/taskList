@@ -14,10 +14,15 @@ form{
     grid-row: 3;
 }
 
+.wrapper{
+    height: 100%;
+    margin: calc(25vh + 50px) auto 25vh auto;
+}
+
 .formWrapper{
     max-height: 200px;
     min-width: 200px;
-    margin: 25vh auto;
+    
 
     grid-template-rows: 1fr 1fr 1fr;
 

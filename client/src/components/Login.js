@@ -33,7 +33,7 @@ export const Login = () => {
     const { email, password } = values;
 
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className={styles.formWrapper}>
                 <div className={styles.user}>
                     <img className={styles.img} src={profile} ></img>
@@ -84,7 +84,7 @@ export const Login = () => {
                     </Button>
                 </form>
             </div>
-        </>
+        </div>
 
     )
 }

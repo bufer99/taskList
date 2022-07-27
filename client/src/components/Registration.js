@@ -22,7 +22,7 @@ export const Registration = () => {
     const { username, email, password } = values;
 
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className={styles.formWrapper}>
                 <div className={styles.user}>
                     <img src={profile} ></img>
@@ -78,7 +78,7 @@ export const Registration = () => {
                     </Button>
                 </form>
             </div>
-        </>
+        </div>
 
     )
 }
