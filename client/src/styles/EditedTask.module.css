@@ -9,6 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    height: 100%;
 }
 
 .taskListWrapper{
@@ -95,4 +97,8 @@
     display: grid;
     word-wrap: break-word;
     grid-template-columns: minmax(10px, 1fr);
+}
+
+textarea{
+    resize: none;
 }

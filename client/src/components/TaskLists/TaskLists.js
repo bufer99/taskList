@@ -81,7 +81,7 @@ export const TaskLists = () => {
     }
 
     return (
-        <div style={{ height: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div style={{ height: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px'}}>
             <div style={{ margin: '30px 0 0 0' }}>
                 <Button onClick={newTask} variant='contained'>Új feladatsor</Button>
             </div>
